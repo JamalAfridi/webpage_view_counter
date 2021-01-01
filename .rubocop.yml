@@ -1,0 +1,6 @@
+require:
+  - rubocop-rspec
+  - rubocop-performance
+AllCops:
+  NewCops: enable
+  SuggestExtensions: false

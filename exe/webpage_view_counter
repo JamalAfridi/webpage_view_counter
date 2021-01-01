@@ -1,0 +1,5 @@
+# frozen_string_literal: true
+
+#!/usr/bin/env ruby
+
+require 'webpage_view_counter'
