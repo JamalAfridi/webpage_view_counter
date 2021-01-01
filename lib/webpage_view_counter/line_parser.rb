@@ -6,5 +6,9 @@ module WebpageViewCounter
     def self.parsed_path(path)
       path[%r{^(/\w+)}]
     end
+
+    def self.parsed_unique_path(path)
+      path[%r{^(/\S+)}]
+    end
   end
 end
