@@ -12,7 +12,7 @@ module WebpageViewCounter
       end
     end
 
-    describe 'aggregate_webpage_visits' do
+    describe '#aggregate_webpage_visits' do
       let(:path) { '/help_page' }
       let(:aggregate_views) { log_aggregator.aggregate_webpage_visits(path) }
 
