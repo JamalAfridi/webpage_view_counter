@@ -22,10 +22,7 @@ module WebpageViewCounter
     private
 
     def aggregate_log_file
-      File.open(log).each do |line|
-        visit_aggregator.aggregate_webpage_visits(parse_path(line))
-        unique_visit_aggregator.aggregate_webpage_visits(parse_unique_path(line))
-      end
+      FileHandler.read_and_aggregate_lines(log, visit_aggregator, unique_visit_aggregator)
     end
 
     def print_webpage_visits

@@ -5,6 +5,7 @@ require 'webpage_view_counter/line_parser'
 require 'webpage_view_counter/log_aggregator'
 require 'webpage_view_counter/log_decorator'
 require 'webpage_view_counter/log_presenter'
+require 'webpage_view_counter/file_handler'
 require 'webpage_view_counter/page_view_counter'
 
 # project namespace
