@@ -11,5 +11,7 @@ gem 'rubocop'
 gem 'rubocop-performance'
 gem 'rubocop-rspec'
 
-gem 'pry-byebug'
-gem 'rspec', '~> 3.0'
+group :test do
+  gem 'pry-byebug'
+  gem 'rspec', '~> 3.0'
+end

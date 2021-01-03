@@ -5,8 +5,14 @@ require 'webpage_view_counter/line_parser'
 require 'webpage_view_counter/log_aggregator'
 require 'webpage_view_counter/log_decorator'
 require 'webpage_view_counter/log_presenter'
+require 'webpage_view_counter/page_view_counter'
 
+# project namespace
 module WebpageViewCounter
+  # main class to call PageViewCounter service
   class Error < StandardError; end
-  # Your code goes here...
+
+  def self.new(log)
+    PageViewCounter.call(log)
+  end
 end
