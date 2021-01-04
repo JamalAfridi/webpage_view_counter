@@ -13,6 +13,7 @@ Checkout the code locally
   $ rvm use
   
 Bundle install the gems
+
   $ bundle install
   
 The code can be exercised with the provided log file via the commad
