@@ -37,9 +37,8 @@ these to a hash as a key and incrementing the value by one in order to create an
 ## Thoughts and considerations
 - This approach used the paths in the log file only but there were also IP address present, some entries in the log file had different paths related to the same IP address, however maybe we should be counting visits based on IP address?
 - Another approach would be to go off the IP addresses, storing these in a set in order to keep track of all unique visits 
-- Could have parsed/aggregated log in seperate steps which would have seperated concerns a litter more leading to better OO Design, however I decided to do both of these things at once while reading the line to reduce space used
 - Current implementation requires a hash to be used in order to aggregate the visits
 - Line presenter allows for a template which can be extended for other kinds of visits we want to display
 
 ## Potential improvements
-- Currently aggregators are setup by passing instances of objects into the PageViewCounter service. It would be ideal if these were configurable with a human readable DSL or configuration 
+- Could have parsed/aggregated log in seperate steps which would have seperated concerns a litter more leading to better OO Design, however I decided to do both of these things at once while reading the line to reduce space used
